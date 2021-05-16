@@ -1,3 +1,3 @@
-# Boilerplate
+# Canvas test
 
-Este boilerplate contém configurações predefinidas utilizando Next, Styled Components, Eslint e Prettier.
+Projeto desenvolvido apenas para compreender melhor o funcionamento do canvas.
