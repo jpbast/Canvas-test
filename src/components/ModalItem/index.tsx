@@ -46,7 +46,7 @@ const Modal: React.FC<{ block: Block; onClose: () => void }> = ({
   return (
     <ModalItemWrapper>
       <ModalItemContent onClick={onClose} block={block}>
-        <h2>Img</h2>
+        <h2>{block.id}</h2>
         <canvas ref={canvasRef} />
       </ModalItemContent>
     </ModalItemWrapper>
