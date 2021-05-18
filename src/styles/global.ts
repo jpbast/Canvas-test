@@ -19,6 +19,14 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  button, input {
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
 `
 
 export default GlobalStyles

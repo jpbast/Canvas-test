@@ -1,4 +1,5 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
+import { BlocksProvider } from '../contexts/BlocksContext'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '../styles/global'
@@ -8,7 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <BlocksProvider>
+        <Component {...pageProps} />
+      </BlocksProvider>
     </ThemeProvider>
   )
 }
